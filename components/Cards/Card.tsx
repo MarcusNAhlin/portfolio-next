@@ -1,7 +1,5 @@
-'use client';
-
-import { Card, Image, Text, Badge, Button, Group, Title, Pill, Flex } from '@mantine/core';
-import { IconBrandGithub, IconDeviceDesktop } from '@tabler/icons-react';
+import { Card, CardSection, Image, Text, Badge, Group, Title, Pill, Flex } from '@mantine/core';
+import CardsLinkBtns from './CardLinkBtns';
 
 interface CardComponentProps {
   title: string;
@@ -29,11 +27,11 @@ export default function CardComponent({
   return (
     <>
       <Card w="400px" shadow="sm" padding="lg" radius="md" withBorder className="card-hover">
-        <Card.Section>
+        <CardSection>
           {imageLink && (
             <Image src={imageLink} height={250} width={500} fit="cover" alt={imageAlt} />
           )}
-        </Card.Section>
+        </CardSection>
 
         <Group justify="space-between" mt="md" mb="xs">
           <Title order={3} fw={500}>
@@ -57,61 +55,7 @@ export default function CardComponent({
           ))}
         </Flex>
 
-        <Group justify="center" gap="sm" grow>
-          {githubLink ? (
-            <Button
-              color="blue"
-              fullWidth
-              mt="md"
-              radius="md"
-              component="a"
-              href={githubLink}
-              target="_blank"
-            >
-              <IconBrandGithub size="1.5rem" stroke="1.5" style={{ margin: 5 }} />
-              On GitHub
-            </Button>
-          ) : (
-            <Button
-              color="blue"
-              fullWidth
-              mt="md"
-              radius="md"
-              data-disabled
-              onClick={(event) => event.preventDefault()}
-            >
-              <IconBrandGithub size="1.5rem" stroke="1.5" style={{ margin: 5 }} />
-              On GitHub
-            </Button>
-          )}
-
-          {livePageLink ? (
-            <Button
-              color="blue"
-              fullWidth
-              mt="md"
-              radius="md"
-              component="a"
-              href={livePageLink}
-              target="_blank"
-            >
-              <IconDeviceDesktop size="1.5rem" stroke="1.5" style={{ margin: 5 }} />
-              Live Page
-            </Button>
-          ) : (
-            <Button
-              color="blue"
-              fullWidth
-              mt="md"
-              radius="md"
-              data-disabled
-              onClick={(event) => event.preventDefault()}
-            >
-              <IconDeviceDesktop size="1.5rem" stroke="1.5" style={{ margin: 5 }} />
-              Live Page
-            </Button>
-          )}
-        </Group>
+        <CardsLinkBtns githubLink={githubLink} livePageLink={livePageLink} />
       </Card>
     </>
   );
