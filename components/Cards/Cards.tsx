@@ -5,7 +5,7 @@ export default function CardsComponent() {
   return (
     <>
       <Center>
-        <Group justify="center" align="start" mt="md" mb="md" mr="xs" ml="xs" w="90%">
+        <Group justify="center" align="start" mt="md" mb="md" mr="xs" ml="xs" w="90%" id="projects">
           <CardComponent
             title="GolfApp"
             description="GolfApp is a website made with NextJS together with Prisma to help golfers to keep track of their score, view statistics, learn how to get better and more."
