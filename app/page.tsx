@@ -2,6 +2,7 @@ import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeTog
 import LandingPageScreen from '@/components/LandingPageScreen';
 import Cards from '@/components/Cards/Cards';
 import Skills from '@/components/Skills/Skills';
+import Contact from '@/components/Contact/Contact';
 
 export default function HomePage() {
   return (
@@ -9,9 +10,11 @@ export default function HomePage() {
       <ColorSchemeToggle margin-0 />
       <LandingPageScreen />
 
+      <Cards />
+
       <Skills />
 
-      <Cards />
+      <Contact />
     </>
   );
 }
