@@ -15,9 +15,14 @@ export default function LandingPageScreen() {
           <br />
           &lt;Web developer&gt;
         </Title>
-        <Button component="a" href="#projects" mt="lg">
-          View Projects
-        </Button>
+        <Flex gap="1rem">
+          <Button component="a" href="#projects" mt="lg">
+            View Projects
+          </Button>
+          <Button component="a" href="#skills" mt="lg">
+            View Skills
+          </Button>
+        </Flex>
       </Flex>
     </div>
   );

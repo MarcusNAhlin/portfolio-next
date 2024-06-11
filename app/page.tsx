@@ -1,15 +1,14 @@
-import { Title, Center } from '@mantine/core';
-import Cards from '../components/Cards/Cards';
 import LandingPageScreen from '@/components/LandingPageScreen';
+import Cards from '@/components/Cards/Cards';
+import Skills from '@/components/Skills/Skills';
 
 export default function HomePage() {
   return (
     <>
       <LandingPageScreen />
 
-      <Center>
-        <Title order={2}>Projects</Title>
-      </Center>
+      <Skills />
+
       <Cards />
     </>
   );
