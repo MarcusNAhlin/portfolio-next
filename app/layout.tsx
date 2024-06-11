@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: any }) {
         </style>
       </head>
       <body>
-        <MantineProvider theme={theme}>
+        <MantineProvider theme={theme} defaultColorScheme="dark">
           {children}
           <FooterComponent />
         </MantineProvider>
