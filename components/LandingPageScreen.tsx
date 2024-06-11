@@ -13,7 +13,13 @@ export default function LandingPageScreen() {
           <br />
           I&apos;m <span style={{ color: 'var(--mantine-color-orange-filled)' }}> Marcus A</span>
           <br />
-          &lt;Web developer&gt;
+          <span
+            style={{
+              marginLeft: '-1.5rem',
+            }}
+          >
+            &lt;Web developer&gt;
+          </span>
         </Title>
         <Flex gap="0.1rem" direction="column">
           <Flex gap="1rem" direction="row">
