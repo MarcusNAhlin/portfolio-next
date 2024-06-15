@@ -39,6 +39,7 @@ export default function contactComponent() {
                   margin: '1rem',
                   borderRadius: '0.2rem',
                   pointerEvents: 'none',
+                  maxWidth: '95vw',
                 }}
               ></Image>
             </Group>
