@@ -11,7 +11,7 @@ export default function LandingPageScreen() {
         <Title order={1}>
           Hello,
           <br />
-          I&apos;m <span style={{ color: 'var(--mantine-color-orange-filled)' }}> Marcus A</span>
+          I&apos;m <span style={{ color: 'var(--mantine-color-orange-filled)' }}>Marcus</span>
           <br />
           <span
             style={{
@@ -26,13 +26,13 @@ export default function LandingPageScreen() {
             <Button component="a" href="#projects" mt="lg">
               View Projects
             </Button>
-            <Button component="a" href="#skills" mt="lg">
+            {/* <Button component="a" href="#skills" mt="lg">
               View Skills
+            </Button> */}
+            <Button component="a" href="#contact" mt="lg">
+              Contact Me
             </Button>
           </Flex>
-          <Button component="a" href="#contact" mt="lg">
-            Contact Me
-          </Button>
         </Flex>
       </Flex>
     </div>

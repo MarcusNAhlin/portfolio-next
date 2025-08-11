@@ -1,7 +1,7 @@
 import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
 import LandingPageScreen from '@/components/LandingPageScreen';
 import Cards from '@/components/Cards/Cards';
-import Skills from '@/components/Skills/Skills';
+// import Skills from '@/components/Skills/Skills';
 import Contact from '@/components/Contact/Contact';
 
 export default function HomePage() {
@@ -12,7 +12,7 @@ export default function HomePage() {
 
       <Cards />
 
-      <Skills />
+      {/* <Skills /> */}
 
       <Contact />
     </>

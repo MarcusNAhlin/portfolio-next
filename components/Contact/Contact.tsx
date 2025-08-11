@@ -31,7 +31,7 @@ export default function contactComponent() {
                 </Text> */}
               <Image
                 src={textAsImage.src}
-                alt="Image of text related to header"
+                alt=""
                 width={733}
                 height={68}
                 style={{
